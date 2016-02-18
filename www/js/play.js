@@ -15,8 +15,8 @@ DodgeDSodge.Play.prototype = {
   
   create: function () {
     this.background = this.add.titleSprite(0,0,320,568,'background)';
-    //
-    //
+    this.background.scale.set(1);
+  
   },
 
   update function () {
