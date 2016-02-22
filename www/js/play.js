@@ -4,10 +4,10 @@
 
 var DogeDodge = {};
 DogeDodge.Play = function () {};
-DodgeDSodge.Play.prototype = {
+DodgeDodge.Play.prototype = {
   init function () {
     console.log("%c~~~Booting the Doge ~~~\n Compliments of Skilstak");
-
+    
   },
   preload: function () {
     this.load.image('background','assets/background.png');
