@@ -21,7 +21,7 @@ DodgeDodge.Play.prototype = {
   },
 
   update function () {
-  }
+  };
 
 };
 
