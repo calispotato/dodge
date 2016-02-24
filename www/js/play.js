@@ -6,7 +6,7 @@ var DogeDodge = {};
 DogeDodge.Play = function () {};
 DodgeDodge.Play.prototype = {
   init function () {
-    console.log("%c~~~Booting the Doge ~~~\n Compliments of Skilstak");
+    console.log("%c~~~Booting the DogeDodge ~~~\n Compliments of Skilstak");
     
   },
   preload: function () {
@@ -18,10 +18,8 @@ DodgeDodge.Play.prototype = {
     this.background.autoScroll(0,50);
     this.background.scale.set(1);
   
-  },
+  }
 
-  update function () {
-  };
 
 };
 
