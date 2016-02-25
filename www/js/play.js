@@ -20,7 +20,7 @@ DogeDodge.Play.prototype = {
     this.background.autoScroll(0,50);
     this.background.scale.set(1);  
   }
-  update: function() {
+  update: function () {
   }
 };
 
