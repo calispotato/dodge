@@ -30,7 +30,6 @@ DogeDodge.Play.prototype = {
 
     this.cursors = game.input.keyboard.createCursorKeys();
 
-    this.projectile = this.add.sprite(0, 0, 40, 40, 'projectile');
   }, 
 
   update: function () {
