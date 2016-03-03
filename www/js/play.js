@@ -29,7 +29,6 @@ DogeDodge.Play.prototype = {
     this.dodger.animations.play('blink',2,true); // (name,fps,loop)
 
     this.cursors = game.input.keyboard.createCursorKeys();
-
   }, 
 
   update: function () {
