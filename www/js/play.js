@@ -31,6 +31,7 @@ DogeDodge.Play.prototype = {
 
 
     this.projectile = this.add.sprite(40,40,'projectile');
+
   },
 
   update: function () {
