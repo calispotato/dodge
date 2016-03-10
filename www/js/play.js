@@ -14,7 +14,7 @@ DogeDodge.Play.prototype = {
   preload: function () {
     this.load.image('background','assets/background.png');
     this.load.spritesheet('dodger','assets/dodger.png',46,64,2);
-    this.load.spritesheet('dodger', 'assets/projectile.1.png',28,28,2); 
+    this.load.spritesheet('dodger', 'assets/projectile.png',28,28,2); 
   },
   create: function () {
     this.background = this.add.tileSprite(0,0,320,568,'background');
@@ -39,6 +39,7 @@ DogeDodge.Play.prototype = {
   },
 
   update: function () {
+    this.projectile.y += 12;
     if (this.cursors.left.isDown) {
       this.dodger.x -= 10;
     }
