@@ -27,10 +27,14 @@ DogeDodge.Play.prototype = {
     this.dodger.animations.add('blink');
     this.dodger.animations.play('blink',2,true); // (name,fps,loop)
 
-    this.cursors = game.input.keyboard.createCursorKeys();
 
 
     this.projectile = this.add.sprite(40,40,'projectile');
+    this.projectile.anchor.set(0.5,0.5); 
+    this.projectile.animations.add('blink');
+    this.projectile.animations.play('blink',2,true);
+
+    this.cursors = game.input.keyboard.createCursorKeys();
 
   },
 
@@ -41,7 +45,12 @@ DogeDodge.Play.prototype = {
   if (this.cursors.right.isDown) {
     this.dodger.x += 10;
     }
+  if (this.projectile.y >586) {
+    this.projectile.y -= 10
+    this.projectile.x = game.rnd.integerInRange(1,320);
+    }
   
+
   }
 };
 
