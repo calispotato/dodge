@@ -17,6 +17,7 @@ DogeDodge.Play.prototype = {
     this.load.spritesheet('dodger', 'assets/projectile.png',28,28,2); 
   },
   create: function () {
+      game.physics.startSystem(Phaser.Physics.Arcade);
     this.background = this.add.tileSprite(0,0,320,568,'background');
     // this.background.autoScroll(0,50);
     this.background.scale.set(1);  
