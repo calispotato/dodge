@@ -27,7 +27,7 @@ DogeDodge.Play.prototype = {
     this.dodger.anchor.set(0.5,0.5);
     this.dodger.animations.add('blink');
     this.dodger.animations.play('blink',2,true); // (name,fps,loop)
-
+    this.dodger.body.collideWorldBounds = true; 
 
 
     this.projectile = this.add.sprite(40,40,'projectile');
