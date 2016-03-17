@@ -37,6 +37,7 @@ DogeDodge.Play.prototype = {
     this.projectile.animations.play('blink',2,true);
 
     this.cursors = game.input.keyboard.createCursorKeys();
+    game.physics.arcade.enable(this.projectile);
     this.projectile.body.gravity.y = 300;
   },
 
