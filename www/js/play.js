@@ -42,10 +42,10 @@ DogeDodge.Play.prototype = {
   update: function () {
     this.projectile.y += 12;
     if (this.cursors.left.isDown) {
-      this.dodger.x -= 10;
+      this.dodger.x -= 20;
     }
   if (this.cursors.right.isDown) {
-    this.dodger.x += 10;
+    this.dodger.x += 20;
     }
   if (this.projectile.y >586) {
     this.projectile.y = -10
