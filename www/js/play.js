@@ -36,16 +36,16 @@ DogeDodge.Play.prototype = {
     this.projectile.animations.play('blink',2,true);
 
     this.cursors = game.input.keyboard.createCursorKeys();
-
+    this.projectile.body.gravity.y = 1;
   },
 
   update: function () {
     this.projectile.y += 12;
     if (this.cursors.left.isDown) {
-      this.dodger.x -= 20;
+      this.dodger.x -= 10;
     }
   if (this.cursors.right.isDown) {
-    this.dodger.x += 20;
+    this.dodger.x += 10;
     }
   if (this.projectile.y >586) {
     this.projectile.y = -10
