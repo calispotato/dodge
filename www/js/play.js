@@ -40,12 +40,12 @@ DogeDodge.Play.prototype = {
     game.physics.arcade.enable(this.projectile);
     this.projectile.body.gravity.y = 1;
   },
-
+/*
   update: function() {
     if (this.cursors.left.isDown) {
       this.dodger.body.velocity.x = -800;
     }
-    //if (this.cursors.right.isDown) {
+    if (this.cursors.right.isDown) {
       this.dodger.body.velocity.x = 800;
     }
     if (this.dodge.y >= 568) {
@@ -60,8 +60,8 @@ DogeDodge.Play.prototype = {
     console.log("OUUCHH");
     game.state.start('Play')
   } 
- 
+ */
 
-  }
+  
 };
 
