@@ -52,7 +52,7 @@ DogeDodge.Play.prototype = {
   if (this.projectile.y >586) {
     this.projectile.y = -10
     this.projectile.x = game.rnd.integerInRange(1,320);
-    }
+    
   
   }
   
