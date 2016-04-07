@@ -13,8 +13,8 @@ DogeDodge.Play.prototype = {
   },
   preload: function () {
     this.load.image('background','assets/background.png');
-    this.load.spritesheet('dodger','assets/dodger.png',46,64,2);
-    this.load.spritesheet('projectile', 'assets/projectile.png',28,28,2); 
+    this.load.spritesheet('dodger','assets/dodger.png',46,64,1);
+    this.load.spritesheet('projectile', 'assets/projectile.png',28,28,1); 
   },
   create: function () {
       game.physics.startSystem(Phaser.Physics.Arcade);
