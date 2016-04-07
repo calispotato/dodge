@@ -14,7 +14,7 @@ DogeDodge.Play.prototype = {
   preload: function () {
     this.load.image('background','assets/background.png');
     this.load.spritesheet('dodger','assets/dodger.png',46,64,2);
-    this.load.spritesheet('dodger', 'assets/projectile.png',28,28,2); 
+    this.load.spritesheet('projectile', 'assets/projectile.png',28,28,2); 
   },
   create: function () {
       game.physics.startSystem(Phaser.Physics.Arcade);
@@ -40,7 +40,7 @@ DogeDodge.Play.prototype = {
     game.physics.arcade.enable(this.projectile);
     this.projectile.body.gravity.y = 1;
   },
-/*
+
   update: function() {
     if (this.cursors.left.isDown) {
       this.dodger.body.velocity.x = -800;
@@ -60,7 +60,7 @@ DogeDodge.Play.prototype = {
     console.log("OUUCHH");
     game.state.start('Play')
   } 
- */
-
+ 
+}
   
 };
