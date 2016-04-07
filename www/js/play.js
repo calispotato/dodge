@@ -55,12 +55,12 @@ DogeDodge.Play.prototype = {
     }
     game.physics.arcade.collide(this.dodge,this.dodger,this.handleCollision);
   },
-*/
+
   handleCollision: function() {
     console.log("OUUCHH");
     game.state.start('Play')
   } 
- 
+ */
 
   
 };
