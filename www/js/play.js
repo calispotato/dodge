@@ -54,8 +54,8 @@ DogeDodge.Play.prototype = {
     this.projectile.x = game.rnd.integerInRange(1,320);
     }
   
-
   }
+  
 };
 
 
