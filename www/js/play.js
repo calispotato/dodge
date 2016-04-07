@@ -45,7 +45,7 @@ DogeDodge.Play.prototype = {
     if (this.cursors.left.isDown) {
       this.dodger.body.velocity.x = -800;
     }
-    if (this.cursors.right.isDown) {
+    //if (this.cursors.right.isDown) {
       this.dodger.body.velocity.x = 800;
     }
     if (this.dodge.y >= 568) {
@@ -59,7 +59,7 @@ DogeDodge.Play.prototype = {
   handleCollision: function() {
     console.log("OUUCHH");
     game.state.start('Play')
-    
+  } 
  
 
   }
