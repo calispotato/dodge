@@ -55,8 +55,7 @@ DogeDodge.Play.prototype = {
     }
   
   }
-  
- 
+};  
 
 
 
