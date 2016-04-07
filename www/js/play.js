@@ -60,7 +60,6 @@ DogeDodge.Play.prototype = {
     console.log("OUUCHH");
     game.state.start('Play')
   } 
-*/ 
- 
+*/
   
 };
