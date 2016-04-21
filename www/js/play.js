@@ -39,7 +39,10 @@ DogeDodge.Play.prototype = {
     this.cursors = game.input.keyboard.createCursorKeys();
     game.physics.arcade.enable(this.projectile);
     this.projectile.body.gravity.y = 1;
+  
+ this.cursors = game.input.keyboard.createCursorKeys();    
   },
+
 
   update: function () {
     //this.projectile.y += 12;
@@ -56,6 +59,5 @@ DogeDodge.Play.prototype = {
   
   }
 };  
-
-
+/*
 
