@@ -40,7 +40,7 @@ DogeDodge.Play.prototype = {
     game.physics.arcade.enable(this.projectile);
     this.projectile.body.gravity.y = 1;
   },
-    game.physics.arcade.collide(this.projectile,this.dodger,this.handleCollision);
+    
   update: function() {
     if (this.cursors.left.isDown) {
       this.dodger.body.velocity.x = -800;
@@ -53,7 +53,7 @@ DogeDodge.Play.prototype = {
       this.projectile.body.velocity.y = 0;
       this.projectile.x = game.rnd.integerInRange(0,320);
     }
-    
+    game.physics.arcade.collide(this.projectile,this.dodger,this.handleCollision);
   },
 
   handleCollision: function() {
