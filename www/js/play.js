@@ -60,4 +60,3 @@ DogeDodge.Play.prototype = {
   }
 };  
 
-
