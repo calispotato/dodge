@@ -43,7 +43,7 @@ DogeDodge.Play.prototype = {
  this.cursors = game.input.keyboard.createCursorKeys();    
   },
 
-
+/*
   update: function () {
     //this.projectile.y += 12;
     if (this.cursors.left.isDown) {
@@ -59,4 +59,28 @@ DogeDodge.Play.prototype = {
   
   }
 };  
+*/
+this.cursors = game.input.keyboard.createCursorKeys();
+  },
 
+  update: function() {
+    if (this.cursors.left.isDown) {
+      this.dodger.body.velocity.x = -800;
+    }
+    if (this.cursors.right.isDown) {
+      this.dodger.body.velocity.x = 800;
+    }
+    if (this.dodge.y >= 568) {
+      this.dodge.y = -32;
+      this.dodge.body.velocity.y = 0;
+      this.dodge.x = game.rnd.integerInRange(0,320);
+    }
+    game.physics.arcade.collide(this.dodge,this.dodger,this.handleCollision);
+  },
+
+  handleCollision: function() {
+    console.log("OUUCHH");
+    game.state.start('Play')
+  }
+
+};
