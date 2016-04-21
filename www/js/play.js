@@ -14,7 +14,7 @@ DogeDodge.Play.prototype = {
   preload: function () {
     this.load.image('background','assets/background.png');
     this.load.spritesheet('dodger','assets/dodger.png',46,64,2);
-    this.load.spritesheet('dodger', 'assets/projectile.png',28,28,2); 
+    this.load.spritesheet('projectile', 'assets/projectile.png',28,28,2); 
   },
   create: function () {
       game.physics.startSystem(Phaser.Physics.Arcade);
@@ -70,12 +70,12 @@ this.cursors = game.input.keyboard.createCursorKeys();
     if (this.cursors.right.isDown) {
       this.dodger.body.velocity.x = 800;
     }
-    if (this.dodge.y >= 568) {
-      this.dodge.y = -32;
-      this.dodge.body.velocity.y = 0;
-      this.dodge.x = game.rnd.integerInRange(0,320);
+    if (this.projectile.y >= 568) {
+      this.projectile.y = -32;
+      this.projectile.body.velocity.y = 0;
+      this.projectile.x = game.rnd.integerInRange(0,320);
     }
-    game.physics.arcade.collide(this.dodge,this.dodger,this.handleCollision);
+    game.physics.arcade.collide(this.projectile,this.dodger,this.handleCollision);
   },
 
   handleCollision: function() {
